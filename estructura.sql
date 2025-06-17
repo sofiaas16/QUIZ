@@ -19,6 +19,7 @@ CREATE TABLE IF NOT EXISTS contracts (
 CREATE TABLE IF NOT EXISTS emp_contracts(
     NIN VARCHAR(10),
     contractNo VARCHAR(10),
+    hoursWeek INT,
         Foreign Key (NIN) REFERENCES employee(NIN),
         Foreign Key (contractNo) REFERENCES contracts(contractNo)
 );
